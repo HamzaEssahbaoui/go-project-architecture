@@ -1,0 +1,20 @@
+<!-- Inside web/templates/home.gohtml -->
+{{define "content"}}
+<form action="/" method="GET">
+    <input type="text" name="keyword" placeholder="Search for movies..." value="{{.SearchQuery}}" required>
+    <button type="submit">Search</button>
+</form>
+
+{{if .Movies}}
+    <div>
+        <h2>Search Results</h2>
+        {{range .Movies}}
+            <div>
+                <a href="/movie/{{.ID}}">{{.Title}} ({{.ReleaseDate}})</a>
+            </div>
+        {{else}}
+            <div>No movies found.</div>
+        {{end}}
+    </div>
+{{end}}
+{{end}}

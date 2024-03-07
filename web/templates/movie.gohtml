@@ -1,0 +1,10 @@
+{{define "title"}}Movie Details{{end}}
+{{define "header"}}{{.Movie.Title}}{{end}}
+{{define "content"}}
+    <article>
+        <h2>{{.Movie.Title}}</h2>
+        <p><strong>Release Date:</strong> {{.Movie.ReleaseDate}}</p>
+        <p>{{.Movie.Overview}}</p>
+        <a href="/">Back to search</a>
+    </article>
+{{end}}
