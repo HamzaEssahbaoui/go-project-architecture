@@ -1,9 +1,9 @@
-# go-project-architecture
+# go-project-architecture for webdev
 
 
 ## Introduction
 
-This is a Go project that serves as a demonstration of best practices and architecture. It uses environment variables for configuration, checks for errors diligently, and structures the code for clear separation of concerns.
+This is a Go project that serves as a demonstration of best practices and architecture for webdev. It uses environment variables for configuration, checks for errors diligently, and structures the code for clear separation of concerns.
 
 ## Setup
 
